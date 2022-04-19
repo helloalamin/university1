@@ -1,0 +1,126 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+a{text-decoration: none;}
+
+.container {width: 100%;height: 100vh;background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),url(img/bg.jpg);background-size: cover;background-position: center;}
+
+.top {width: 100%;height: 70px;background: linear-gradient(rgb(131 239 118 / 50%), rgb(34 247 109 / 50%));display: flex;align-items: center;justify-content: space-between;padding: 0px 150px;}
+
+.logo_area {width: 20%;}
+
+.logo_area a {display: flex;align-items: center;justify-content: space-between;}
+
+.logo_area a img {width: 100px;}
+
+.logo_area a h1 {color: #ffc107;text-transform: uppercase;font-family: cursive;margin-left: 15px;}
+
+.menu_area {width: 40%;}
+
+.menu_area ul {list-style: none;display: flex;align-items: center;justify-content: space-between;}
+
+.menu_area ul li {position: relative;}
+
+.menu_area ul li a {color: #fff;font-family: arial;font-size: 16px;transition: 0.3s;}
+
+.menu_area ul li a:hover {color: coral;}
+
+.menu_area ul li:after {content: '';position: absolute;width: 0%;height: 3px;background: #00ffff;bottom: -10px;left: 0;transition: .5s;}
+
+.menu_area ul li:hover::after {width: 100%;}
+
+.info {text-align: center;width: 100%;position: absolute;top: 50%;transform: translate(10px, 10px);}
+
+.info h1 {color: #ffc107;font-family: arial;font-size: 60px;}
+
+.info p {color: #fff;font-size: 20px;font-family: arial;margin: 30px 0px;}
+
+.btn button {padding: 15px 45px;background: transparent;border: 2px solid #00ffff;color: coral;font-size: 16px;border-radius: 25px;cursor: pointer;position: relative;overflow: hidden;font-weight: bold;}
+
+.btn button::after {content: '';position: absolute;width: 0%;height: 100%;background: rgb(87 229 104);left: 0;top: 0;z-index: -1;transition: .5s all ease-in-out;}
+
+.btn button:hover::after {width: 100%;}
+.footer{
+	margin-top: 1px;
+	width: 100%;
+	padding: 100px 15%;
+	background: #333;
+	color: #efefef;
+	display: flex;
+}
+.footer div{text-align: center;}
+.col-2{flex-grow: 3;}
+h3 {font-weight: 300;margin-bottom: 30px;letter-spacing: 1px; color: orange; font-weight: bolder;}
+
+a {display: block;text-decoration: none;color: #efefef;margin-bottom: 10px; text-align: left;}
+form input {width: 300px;height: 35px;border-radius: 4px;text-align: center;margin-top: 20px;margin-bottom: 40px;outline: none;border: none;}
+
+form button {background: transparent;border: 2px solid #43df26;color: #27dd35;border-radius: 30px;padding: 10px 30px;font-size: 15px;cursor: pointer;}
+
+.soceal-icons{
+	margin-top: 30px;
+}
+.soceal-icons i{
+	font-size: 22px;
+	margin: 10px;
+	cursor: pointer;
+}
+.container-2{
+	width: 100%;
+	height: 10vh;
+}
+
+.top-area{
+    background: linear-gradient(270deg, #246655, #09e3ab, #c52ae8);
+    background-size: 600% 600%;
+
+    -webkit-animation: AnimationName 22s ease infinite;
+    -moz-animation: AnimationName 22s ease infinite;
+    -o-animation: AnimationName 22s ease infinite;
+    animation: AnimationName 22s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-o-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+
+@media only screen and (max-width: 767px){
+	body{
+		background-color: coral;
+	}
+	.footer {
+	    display: block;
+	}
+	.top {
+	    height: auto;
+	    display: block;
+	    padding: 0px 15px;
+	}
+}
+
+
+@media only screen and (min-width: 768px) and (max-width:  1199px){
+	body{
+		background-color: blue
+	}
+}
+
+@media only screen and (max-width:  1599px){
+
+}
